@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="header-flex">
+        <nav class="header__nav">
+            <ul class= "header__navbar--principal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <br>
+
+    <main>
+        <h1>Contacto</h1>
+
+        <br>
+
+        <form class="formulario" >
+            
+                <legend>Escribime tu consulta!</legend>
+                <label for="name">Nombre</label>
+                <input type="text" name=name placeholder="ingresa tu nombre" required>
+                <br>
+                <label for="surname">Apellido</label>
+                <input type="text" name=surname placeholder="ingresa tu apellido" required>
+                <br>
+                <label for="email">E-Mail</label>
+                <input type="email" name=email placeholder="ingresa tu e-mail" required>
+    
+                <br>
+                <br>
+    
+                <label for="tema">Que tema te intereso?</label>
+                <br>
+                <select name="" id="">
+                    <option value="ilustraciones">Ilustraciones</option>
+                    <option value="narraciones">Narraciones</option>
+                    <option value="tienda">Tienda</option>
+                    <option value="otros">Otros</option>
+                </select>
+                
+                <br>
+                <br>
+    
+                <label for="consulta">Escribime tu consulta</label>
+                <br>
+                <textarea name="" id="" cols="30" rows="5" maxlength="250"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+    
+                <br>
+                <br>
+                <input type="checkbox" name="cbox1"> Recibir notificaciones!
+                
+                <br>
+                <input type="button" value="NADA (JS)">
+    </main>
+        
+    </form>
+        
+        <br>
+
+        <footer>
+            <div class="container__footer--grid">
+                        <div class="footer__logo">
+                            <a href="index.html"><img src="img/CRIS FIRMA WEB LOGO.png" alt=""></a>
+                        </div>
+                <div class="grid-list">
+                    <ul class="footer__list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="grid-newsletter">
+                    <span class="newsletter"> 
+                        <h4>Todos los dias, nuevas publicaciones!</h4>
+                        <input type="text">
+                        <button>Suscribite</button>
+                    </span>
+                </div>
+        </div>
+        </footer>
+
+</body>
+</html>

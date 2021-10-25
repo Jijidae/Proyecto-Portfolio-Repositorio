@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Amatic SC', cursive;
+    background-color:#fafbf8;
+}
+.index__body{
+
+    background-image: url(../img/arrebol.png);
+    background-color: #fafbf8;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+/*--------HEADER*/
+header{
+    background-color: transparent;
+    background-size: cover;
+    }
+.header-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+/*----------NAVBAR*/
+.header__navbar--principal{
+    padding: 1rem;
+    list-style: none;
+}
+.header__navbar--principal li{
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 2.1rem;
+}
+.header__navbar--principal a{
+    color: #12202e;
+    text-decoration: none;
+}
+a:hover{
+    color: #0dfcdc;
+    transition: color 2s;
+}
+header li:hover{
+    transform: skewY(5deg);
+    transition: transform 2s; 
+}
+
+/*---------INDEX MAIN*/
+
+/*----TITULOS*/
+.index__main--titulos{
+    display: grid;
+    text-align: justify;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+.index__main--titulo{
+    grid-area: 1 / 1 / 1 / 1;
+
+}
+.index__main--subtitulo1{
+    grid-area: 2 / 1 / 2 / 2;
+    margin: 10px;
+}
+.index__main--subtitulo2{
+    grid-area: 3 / 1 / 3 / 1;
+    margin: 10px;
+}
+
+/*----BUTTONS*/
+button:hover{
+    background-color: #39f5dc;
+    transition: background-color 5s;
+    transform: scale(1 , 1.5);
+    transition: transform 1s;
+}
+.index__main--buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.index__main--buttons button{
+    width: 100px;
+    height: 40px;
+}
+.index__main--buttons a{
+    color: #12202e;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+/*-------GALERIA TITULOS*/
+h1{
+    color: #47525e;
+
+}
+h2{
+    color: #47525e;
+}
+h3{
+    color: #47525e;
+}
+/*-------GALERIA PARRAFOS*/
+.galeria a{
+    color: #6aa59d;
+    font-weight: bold;
+}
+.parrafo1{
+    color: #2e6d66;
+    text-align: center;
+    line-height: 200%;
+}
+.parrafo2{
+    color: #76a592;
+    text-align: center;
+    line-height: 200%
+}
+.parrafo3{
+    color: #d0eac6;
+    text-align: center;
+    line-height: 200%
+}
+/*------TIENDA*/
+
+
+/*------CONTACTO*/
+form{
+    margin: 50px;
+	display: inline-block;
+	background-image: linear-gradient(to bottom,  #115f5f, #6aa59d);
+    border: #beeede;
+    border-style: double;
+    border-width: medium;
+	width: 500px;
+	height: 600px;
+	padding: 80px;
+}
+
+/*------FOOTER*/
+footer{
+    clear: both;
+    background-image: radial-gradient( #0a4444,  #12202e);
+    color: #dddfe0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container__footer--grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer a{
+    color: #dddfe0;
+    list-style: none;
+}
+/*----FOOTER LIST*/
+.footer__list{
+    margin-top: 10px;
+}
+.footer__list li{
+    list-style: none;
+}
+.footer__list li a{
+    display: inline-block;
+    width: 20px;
+    justify-content: left;
+}
+/*----NEWSLETTER*/
+.newsletter input:focus{
+    width: 50%;
+    height: 50%;
+    font-size: x-large;
+}
+.grid-newsletter{
+    margin-top: 10px;
+}
+/*----LOGO*/
+.footer__logo{
+    margin: 10px;
+    position: relative;
+}
+.footer__logo img:hover{
+    transform: scale(1 , 1.5);
+    transition: transform 2s;
+}
